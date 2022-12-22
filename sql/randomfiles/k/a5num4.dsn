@@ -1,0 +1,10 @@
+[ODBC]
+DRIVER=ODBC Driver 13 for SQL Server
+Authentication=ActiveDirectoryIntegrated
+TrustServerCertificate=No
+Encrypt=Yes
+DATABASE=actual
+WSID=DESKTOP-3RJNBTR
+APP=Microsoft Office
+SERVER=.
+Description=ado

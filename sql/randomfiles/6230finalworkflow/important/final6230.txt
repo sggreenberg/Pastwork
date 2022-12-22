@@ -1,0 +1,14 @@
+look at exam review and copy down the definition from context
+10. All relational tables satisfy the 1nf requirement.
+T
+11. it is possible for a table in 2nf to exhibit to transitive dependency where the primary key may rely on one or more nonprime attributes to fuctionally determine other nonprime attributes?
+T
+12. atomic attributes are attributes that can be further subdivided
+F
+13. A table is in 4nf if it is in 3nf and it has no independent multivalued dependencies?
+T
+14. Attributes should clearly define participation, connectivity, and document cardinality
+F
+15. The primary objective in database design is to create complete, normalized, nonredunant, and fully integrated conceptual, logical, and physical database models 
+T (can tell which page it is on)
+

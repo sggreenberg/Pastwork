@@ -1,0 +1,43 @@
+All reserved words are capitalized. Names start with capital. query ends with semicolon
+multi line comment use /* comment on next line then following line */
+WHERE Var > [Number];
+
+SELECT TickerSymbol, Industry, TradeDate, Volume
+	FROM StockData                                                                                                                                                                                                  
+	WHERE Volume > 30000000
+ORDER BY TickerSymbol, TradeDate DESC; --orderby is at same level as select and DESC only affects TradeDate going by newer date first 
+
+BETWEEN includes endpoints
+
+SELECT TickerSymbol, Industry, TradeDate, Volume
+	FROM StockData                                                                                                                                                                                                  
+ 	WHERE TradeDate >= '1/1/2018' AND TradeDate < '1/1/2019 --We didn't do <= 12/31/2019 in case there is time element because 12/31/2019 starts is noon ?
+ORDER BY TradeDate;
+-- or
+SELECT TickerSymbol, Industry, TradeDate, Volume
+	FROM StockData                                                                                                                                                                                                  
+	WHERE YEAR(TradeDate)=2018
+ORDER BY TradeDate;
+-
+SELECT TickerSymbol, Industry, TradeDate, Volume
+	FROM StocKData                                                                                                                                                                                                  
+	WHERE TickerSymbol = 'MSFT' AND
+	TradeDate NOT BETWEEN --DIDNT FINISH
+
+SELECT TradeDate, ST_Low, ST_High
+	FROM StockData
+	WHERE (ST_High > 130 AND TradeDate < '12/31/2014')
+	OR
+	(ST_Low < 5 AND TradeDate > '12/31/2018')
+ORDER BY ST_Low DESC, ST_High DESC;
+
+SELECT PriceID, Volume
+	FROM StockData
+	WHERE Volume = 0
+ORDER BY PriceID DESC
+
+SELECT PriceID, ST_Close
+	FRO< StockData
+	WHERE ST_Close > 90 AND ST_Close < 100
+ORDER BY PriceID DESC;
+putting in ticker symbol order we go by convention of ascending

@@ -1,0 +1,4 @@
+select statement needed to run any sql
+How much older is raputin than tommy lee in seconds
+SELECT DATEDIFF_BIG(ss,'1/1/1869','10/03/1962')
+cannot have aggregate in where clause

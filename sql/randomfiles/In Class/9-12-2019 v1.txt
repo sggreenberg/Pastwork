@@ -1,0 +1,102 @@
+--List all company information attributes for comapnies incorporated in Texas.
+SELECT *
+	FROM CompanyInformation	
+	WHERE [State] = 'TX';
+
+
+
+/*
+List the TickerSymbol, Industry, TradeDate and the Volume columns from the StockData table.
+List only the rows that have a volume of more than thirty million shares traded. 
+*/
+SELECT TickerSymbol, Industry, TradeDate, Volume
+	FROM StockData	
+	WHERE Volume > 30000000;
+
+/*
+List the TickerSymbol, Industry, TradeDate and the Volume columns from the StockData table.
+List only the rows that have a volume of more than thirty million shares traded. 
+Arrange the answer in TickerSymbol order and then in TradeDate order. This means that for
+a given stock, trading days should appear in chronological order. 
+*/
+
+SELECT TickerSymbol, Industry, TradeDate, Volume
+	FROM StockData	
+	WHERE Volume > 30000000
+ORDER BY TickerSymbol, TradeDate;
+
+
+
+
+/* List the Price ID's in ascending order and the open prices of all the stocks that have 
+an open price between 20 and 21 dollars.
+*/
+
+SELECT PriceID, ST_Open
+	FROM StockData
+	WHERE ST_Open BETWEEN 20 and 21
+ORDER BY PriceID;
+
+
+/* List the TickerSymbol, Industry, TradeDate, the opening stock price and the closing stock
+price. List only those trading days that occured in the year 2018. Arrange the answer in
+order of the trade dates which means that for a given stock, trading days should appear in 
+chronological order. 
+*/
+
+SELECT TickerSymbol, Industry, TradeDate, ST_Open, ST_Close
+	FROM StockData	
+	WHERE TradeDate >= '1/1/2018' AND TradeDate < '1/1/2019'
+ORDER BY TradeDate;
+
+
+
+
+/* List the TickerSymbol, TradeDate and the closing stock price. List only Microsoft 
+tuples that occurred in on dates other than the range January 1, 2005 to June 1, 2018.
+Arrange the answer in order of the ticker symbol, trade dates, and then the closing price. 
+*/
+SELECT TickerSymbol, TradeDate, ST_Close
+	FROM StockData
+	WHERE TickerSymbol = 'MSFT' AND 
+	TradeDate NOT BETWEEN '01/01/2005' and '06/01/2018'
+ORDER BY TickerSymbol, TradeDate, ST_Close;
+
+
+
+
+/* List the trade dates, stock highs and stock lows of all stocks that either had a 
+stock high over 130 dollars and were traded before December 31st, 2014, or stocks that were 
+traded after December 31st 2018 and had a stock low below 5 dollars. List the stock highs 
+and lows in descending order.
+*/
+SELECT TradeDate, ST_Low, ST_High
+	FROM StockData
+	WHERE (ST_High > 130 AND TradeDate < '12/31/2014')
+	OR
+	(ST_Low < 5 AND TradeDate > '12/31/2018')
+ORDER BY ST_Low DESC, ST_High DESC;
+
+
+
+
+/* List the Price ID of all stocks that have a volume of 0. 
+List the Price IDs in descending order. 
+*/
+
+SELECT PriceID, Volume
+	FROM StockData
+	WHERE Volume = 0
+ORDER BY PriceID DESC;
+
+
+
+
+/*
+List the Price ID's in descending order of all the stocks that close with 
+a price greater than 90 dollars and less than 100 dollars. 
+*/
+SELECT PriceID, ST_Close
+	FROM StockData
+	WHERE ST_Close>90 AND ST_Close<100
+ORDER BY PriceID DESC;

@@ -1,0 +1,9 @@
+[ODBC]
+DRIVER=SQL Server Native Client RDA 11.0
+UID=scottgreenberg
+AutoTranslate=No
+DATABASE=scottgreenberg
+WSID=DESKTOP-3RJNBTR
+APP=Microsoft Office
+SERVER=darkside.usu.edu
+Description=a5n4

@@ -1,0 +1,92 @@
+Business Intelligence and Data Warehouses
+	preview
+
+	The need for data analysis
+				
+	business intelligence
+			table 13.1
+		business intelligence architecture
+			figure 13.1
+			table 13.2
+			table 13.3
+		business intelligence benefits
+		business intelligence evolution
+			table 13.4
+			figure 13.2
+		business intelligence technology trends
+			table 13.5
+	decision support data
+			table 13.6
+			table 13.7
+		operational data versus decision support data
+		decision support database requirements
+			Data extraction and filtering
+			database size
+	the data warehouse
+			table 13.8
+			figure 13.4
+		data marts
+		twelve rules that define a data warehouse
+	star schemas
+			table 13.9
+		facts
+		dimensions
+			figure 13.5
+		attributes
+			table 13.10
+			figure 13.6
+			figure 13.7
+		attribute hierarchy
+			figure 13.8
+			figure 13.9
+		star schema representation
+			figure 13.10
+		performance improving techniques for the star schema
+			figure 13.11
+			normalizing dimensional tables
+			figure 13.12
+			maintaining multiple fact tables that represent different aggregation levels
+			denormalizing fact tables
+			figure 13.13
+			partitioning and replicating tables
+	online analytical processing
+		multidimensional data analysis techniques
+			figure 13.14
+		advanced database support
+		easy-to-use end-user interfaces
+		olap architecture
+			figure 13.15
+			figure 13.16
+			figure 13.17
+		relational olap
+			multidimensional data schema support within the rdbms
+			data access language and query performance optimized for multidimensional data
+			table 13.11
+			support for very large databases
+		multidimensional olap
+		relational versus multidimensional olap
+			table 13.12
+	data analytics
+		data mining
+			figure 13.18
+			figure 13.19
+		predictive analytics
+	sql analytic functions
+			figure 13.20
+		rollup extension
+			figure 13.21
+		cube extension
+			figure 13.22
+		materialized views
+			figure 13.23
+			figure 13.24
+			figure 13.25
+	data visualization
+			figure 13.26
+		the need for data visualization
+			figure 13.27
+		the science of data visualization
+			figure 13.28
+			figure 13.29
+		understanding the data
+			figure 13.30

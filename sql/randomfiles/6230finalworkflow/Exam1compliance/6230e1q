@@ -1,0 +1,19 @@
+subtypes can inherit attributes and methods of its supertype (TRUE)
+Where do I put attributes, at the highest level or lowest level of specialization hierarchy (Highest)
+Two things are alike if they have the same attributes
+4(5)/6
+Building ER diagrams better done step-by-step or iterative process (Iterative Process)
+With Optional attributes I allow NULL’s
+Which is better allow NULLS or not (allow NULLS otherwise can end up with problems and can’t proceed)
+
+57. the response of ... dBMS to the query is the :(query result set )
+26. Referential and entity integrity are two names for the same thing (False referental: foreign keys; entity: property referred to by primary key)
+78 A relationship is an association between? (Entities)
+20 If the attribute B is functionally dependent of on Composite Key A, but not on any subsets of that Attribute Key, the relationship is Fully functionally dependent (TRUE)
+6 DBMS reveleas much of databases internal complexity to users in application programs (FALSE)
+95 If one exists, a database modeler use _ as the primary key of the entity being modeled (Natural Identifier) 
+
+
+Data Database-DBMS Information Knowledge (general to specific)
+What month is best for christmas ornaments-november. This is knowledge
+

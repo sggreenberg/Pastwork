@@ -1,0 +1,165 @@
+
+1. Chapter 1
+
+Ad hoc query - A spur-of-the-moment question.  
+Analytical database - A database focused primarily on storing historical data and business metrics used exclusively for tactical or strategic decision-making.  
+Business intelligence - A comprehensive, cohesive, and integrated set of tools and processes used to capture, collect, integrate, store, and analyze data with the purpose of generating and presenting information to support business decision making.  
+Centralized database - A database located at a single site.  
+Cloud database - A database that is created and maintained using cloud services, such as Microsoft Azure or Amazon's AWS.  
+Data - Raw facts, or facts that have not yet been processed to reveal their meaning to the end user.  
+Data anomaly - A data abnormality in which inconsistent changes have been made to a database. For example, an employee moves, but the address change is not corrected in all files in the database.  
+Data dependence - A data condition in which data representation and manipulation are dependent on the physical data storage characteristics.  
+Data dictionary - A DBMS component that stores metadata? Data about data. Thus, the data dictionary contains the data definition as well as their characteristics and relationships. A data dictionary may also include data that are external to the DBMS. Also known as an information resource dictionary.  
+Data inconsistency - A condition in which different versions of the same data yield different results.  
+Data independence - A condition in which data access is unaffected by changes in the physical data storage characteristics.  
+Data integrity - In a relational database, a condition in which the data in the database comply with all entity and referential integrity constraints.  
+Data management - A process that focuses on data collection, storage, and retrieval. Common data management functions include addition, deletion, modification, and listing.  
+Data processing manager - A DP specialist who evolved into a department supervisor. Roles include managing technical and human resources, supervising senior programmers, and troubleshooting the program.  
+Data quality - A comprehensive approach to ensuring the accuracy, validity, and timeliness of data.  
+Data redundancy - A condition in which a data environment contains redundant data.  
+Data warehouse - An integrated, subject-oriented, time-variant, nonvolatile collection of data that provides support for decision making, according to Bill Inmon, the acknowledged ?father of the data warehouse.?  
+Database - A shared, integrated computer structure that houses a collection of related data. A database contains two types of data: end-user data and metadata. The metadata consist of data about data? That is, the data characteristics and relationships.  
+Database design - The process that yields the description of the database structure and determines the database components. Database design is the second phase of the Database Life Cycle.  
+Database management system (DBMS) - The collection of programs that manages the database structure and controls access to the data stored in the database.  
+Database system - An organization of components that defines and regulates the collection, storage, management, and use of data in a database environment.  
+Desktop database - A single-user database that runs on a personal computer.  
+Discipline-specific database - A database that contains data focused on specific subject areas.  
+Distributed database - A logically related database that is stored in two or more physically independent sites.  
+Enterprise database - The overall company data representation, which provides support for present and expected future needs.  
+Extensible Markup Language (XML) - A metalanguage used to represent and manipulate data elements. Unlike other markup languages, XML permits the manipulation of a document's data elements. XML facilitates the exchange of structured documents such as orders and invoices over the Internet.  
+Field - An alphabetic or numeric character or group of characters that defines a characteristic of a person, place, or thing. For example, a person's Social Security number, address, phone number, and bank balance all constitute fields.  
+File - A named collection of related records.  
+General-purpose database - A database that contains a wide variety of data used in multiple disciplines? For example, a census database that contains general demographic data, or the LexisNexis and ProQuest databases that contain newspaper, magazine, and journal articles for a variety of topics.  
+Information - The result of processing raw data to reveal its meaning. Information consists of transformed data and facilitates decision-making.  
+Islands of information - In the old file system environment, pools of independent, often duplicated, and inconsistent data created and managed by different departments.  
+Knowledge - The body of information and facts about a specific subject. Knowledge implies familiarity, awareness, and understanding of information as it applies to an environment. A key characteristic is that new knowledge can be derived from old knowledge.  
+Logical data format - The way a person views data.  
+Metadata - Data about data; that is, data about data characteristics and relationships.  
+Multiuser database - A database that supports multiple concurrent users.  
+NoSQL - A new generation of database management systems, that is not based on the traditional relational database model.  
+Online analytical processing (OLAP) - Decision support system tools that use multidimensional data analysis techniques. OLAP creates an advanced data analysis environment that supports decision-making, business modeling, and operations research.  
+Online transaction processing (OLTP) - The systems that support a company's day-to-day operations. Databases that support OLTP are known as OLTP databases, transactional databases, or operational databases.  
+Operational database - A database designed primarily to support a company's day-to-day operations.  
+Performance tuning - Activities that make a database perform more efficiently in terms of storage and access speed.  
+Physical data format - The way a computer sees data.  
+Query - A question or task asked by an end user of a database in the form of SQL code. A specific request for data manipulation issued by the end user or the application to the DBMS.  
+Query language - A nonprocedural language that is used by a DBMS to manipulate its data. An example of a query language is SQL.  
+Query result set - The collection of data rows returned by a query.  
+Record - A collection of related fields.  
+Semistructured data - Data that have already been processed to some extent.  
+Single-user database - A database that supports only one user at a time.  
+Social media - Web and mobile technologies that enable? Anywhere, anytime, always on? Human interactions.  
+Structural dependence - A data characteristic in which a change in the database schema affects data access, thus requiring changes in all access programs.  
+Structural independence - A data characteristic in which changes in the database schema do not affect data access.  
+Structured data - Unstructured data that have been formatted to facilitate storage, use, and information generation.  
+Structured Query Language (SQL) - A powerful and flexible relational database language composed of commands that enable users to create database and table structures, perform various types of data manipulation and data administration, and query the database to extract useful information.  
+Transactional database - A database designed to keep track of the day-to-day transactions of an organization.  
+Unstructured data - Data that exist in their original, raw state; that is, in the format in which they were collected.  
+Workgroup database - A multiuser database that usually supports fewer than 50 users or is used for a specific department in an organization.  
+XML database - A database system that stores and manages semistructured XML data.
+
+2. Chapter 3    
+
+Candidate key - A minimal superkey; that is, a key that does not contain a subset of attributes that is itself a superkey.  
+Closure - A property of relational operators that permits the use of relational algebra operators on existing tables to produce new relations.  
+Composite entity - An entity designed to transform an M:N relationship into two 1:M relationships. The composite entity's primary key comprises at least the primary keys of the entities that it connects.  
+Composite key - A multiple-attribute key.  
+Data dictionary - A DBMS component that stores metadata?data about data. Thus, the data dictionary contains the data definition as well as their characteristics and relationships. A data dictionary may also include data that are external to the DBMS. Also known as an information resource dictionary.  
+Dependent - An attribute whose value is determined by another attribute.  
+Determinant - Any attribute in a specific row whose value directly determines other values in that row.  
+Determination - The role of a key. In the context of a database table, the statement ->A determines B indicates that knowing the value of attribute A means that the value of attribute B can be looked up.  
+Domain - In data modeling, the construct used to organize and describe an attribute's set of possible values.  
+Entity integrity - The property of a relational table that guarantees each entity has a unique value in a primary key and that the key has no null values.  
+Equijoin - A join operator that links tables based on an equality condition that compares specified columns of the tables.  
+Flags - Special codes implemented by designers to trigger a required response, alert end users to specified conditions, or encode values. Flags may be used to prevent nulls by bringing attention to the absence of a value in a table.  
+Foreign key (FK) - An attribute or attributes in one table whose values must match the primary key in another table or whose values must be null.  
+Full functional dependence - A condition in which an attribute is functionally dependent on a composite key but not on any subset of the key.  
+Functional dependence - Within a relation R, an attribute B is functionally dependent on an attribute A if and only if a given value of attribute A determines exactly one value of attribute B. The relationship B is dependent on A is equivalent to A determines B, and is written as AB.  
+Homonym - The use of the same name to label different attributes. Homonyms generally should be avoided. Some relational software automatically checks for homonyms and either alerts the user to their existence or automatically makes the appropriate adjustments.  
+Index - An ordered array of index key values and row ID values. Indexes are generally used to speed up and facilitate data retrieval.  
+Inner join - A join operation in which only rows that meet a given criterion are selected. The join criterion can be an equality condition or an inequality condition. The inner join is the most commonly used type of join.  
+Join column(s) - Columns that join two tables. The join columns generally share similar values.  
+Key - An entity identifier based on the concept of functional dependence; keys may be classified in several ways.  
+Key attribute - The attributes that form a primary key.  
+Left outer join - In a pair of tables to be joined, a join that yields all the rows in the left table, including those that have no matching values in the other table. For example, a left outer join of CUSTOMER with AGENT will yield all of the CUSTOMER rows, including the ones that do not have a matching AGENT row.  
+Linking table - In the relational model, a table that implements an M:M relationship.  
+Natural join - A relational operation that links tables by selecting only the rows with common values in their common attribute.  
+Null - In SQL, the absence of an attribute value. Note that a null is not a blank.  
+Outer join - A relational algebra JOIN operation that produces a table in which all unmatched pairs are retained; unmatched values in the related table are left null.  
+Predicate logic - Used extensively in mathematics to provide a framework in which an assertion can be verified as either true or false.  
+Primary key (PK) - In the relational model, an identifier composed of one or more attributes that uniquely identifies a row. Also, a candidate key selected as a unique entity identifier.  
+Referential integrity - A condition by which a dependent table's foreign key must have either a null entry or a matching entry in the related table. Even though an attribute may not have a corresponding attribute, it is impossible to have an invalid entry.  
+Relational algebra - A set of mathematical principles that form the basis for manipulating relational table contents; the eight main functions are SELECT, PROJECT, JOIN, INTERSECT, UNION, DIFFERENCE, PRODUCT, and DIVIDE.  
+Relvar - Short for relation variable, a variable that holds a relation. A relvar is a container for holding relation data, not the relation itself.  
+Right outer join - In a pair of tables to be joined, a join that yields all of the rows in the right table, including the ones with no matching values in the other table. For example, a right outer join of CUSTOMER with AGENT will yield all of the AGENT rows, including the ones that do not have a matching CUSTOMER row.  
+Secondary key - A key used strictly for data retrieval purposes. For example, customers are not likely to know their customer number, but the combination of last name, first name, middle initial, and telephone number will probably match the appropriate table row.  
+Set theory - A part of mathematical science that deals with sets, or groups of things, and is used as the basis for data manipulation in the relational model.  
+Superkey - An attribute or attributes that uniquely identify each entity in a table.  
+Synonym - The use of different names to identify the same object, such as an entity, an attribute, or a relationship; synonyms should generally be avoided.  
+System catalog - A detailed system data dictionary that describes all objects in a database.  
+Theta join - A join operator that links tables using an inequality comparison operator in the join condition.  
+Tuple - In the relational model, a table row.  
+Union-compatible - Two or more tables that share the same column names and have columns with compatible data types or domains.  
+Unique index - An index in which the index key can have only one associated pointer value.  
+
+3. Chapter 4    
+
+Binary relationship - An ER term for an association between two entities. For example, PROFESSOR teaches COURSE.  
+Cardinality - A property that assigns a specific value to connectivity and expresses the range of allowed entity occurrences associated with a single occurrence of the related entity.  
+Composite attribute - An attribute that can be further subdivided to yield additional attributes. For example, a phone number such as 615-898-2368 may be divided into an area code 615, an exchange number 898, and a four-digit code 2368. Compare to simple attribute.  
+Composite identifier - In ER modeling, a key composed of more than one attribute.  
+connectivity  The classification of the relationship between entities. Classifications include 1:1, 1:M, and M:N.  
+Derived attribute - An attribute that does not physically exist within the entity and is derived via an algorithm. For example, the Age attribute might be derived by subtracting the birth date from the current date.  
+Existence-dependent - A property of an entity whose existence depends on one or more other entities. In such an environment, the existence-independent table must be created and loaded first because the existence-dependent key cannot reference a table that does not yet exist.  
+Existence-independent - A property of an entity that can exist apart from one or more related entities. Such a table must be created first when referencing an existence-dependent table.  
+Identifiers - In an ERM, unique names of each entity instance. In the relational model, such identifiers are mapped to primary keys in tables.  
+Identifying relationship - A relationship in which related entities are existence-dependent. Also called a strong relationship or strong identifying relationship because the dependent entity's primary key contains the primary key of the parent entity.  
+Iterative process - A process based on repetition of steps and procedures.  
+Mandatory participation - A relationship in which one entity occurrence must have a corresponding occurrence in another entity. For example, an EMPLOYEE works in a DIVISION.  
+Multivalued attributes - An attribute that can have many values for a single entity occurrence. For example, an EMP_DEGREE attribute might store the string BBA, MBA, PHD to indicate three different degrees held.  
+Non-identifying relationship - A relationship in which the primary key of the dependent entity does not contain the primary key of the related parent entity.  
+Optional attribute - In ER modeling, an attribute that does not require a value; therefore, it can be left empty.  
+Optional participation - In ER modeling, a condition in which one entity occurrence does not require a corresponding entity occurrence in a particular relationship.  
+Participants - An ER term for entities that participate in a relationship. For example, in the Relationship - PROFESSOR teaches CLASS,? the teaches relationship is based on the participants PROFESSOR and CLASS.  
+Recursive relationship - A relationship found within a single entity type. For example, an EMPLOYEE is married to an EMPLOYEE or a PART is a component of another PART.  
+regular entity  An entity that is existence-independent, that is, it can exist apart from all of its related entities. Also called a strong entity.  
+Relational schema - The organization of a relational database as described by the database administrator.  
+Relationship degree - The number of entities or participants associated with a relationship. A relationship degree can be unary, binary, ternary, or higher.  
+Required attribute - In ER modeling, an attribute that must have a value. In other words, it cannot be left empty.  
+Simple attribute - An attribute that cannot be subdivided into meaningful components. Compare to composite attribute.  
+Single-valued attribute - An attribute that can have only one value.  
+Strong (identifying) relationship - A relationship that occurs when two entities are existence-dependent; from a database design perspective, this relationship exists whenever the primary key of the related entity contains the primary key of the parent entity.  
+Strong entity - An entity that is existence-independent, that is, it can exist apart from all of its related entities. Also called a regular entity.  
+Ternary relationship - An ER term used to describe an association between three entities. For example, a CONTRIBUTOR contributes money to a FUND from which a RECIPIENT receives money.  
+Unary relationship - An ER term used to describe an association within an entity. For example, a COURSE might be a prerequisite to another COURSE.  
+Weak entity - An entity that displays existence dependence and inherits the primary key of its parent entity. For example, a DEPENDENT requires the existence of an EMPLOYEE.  
+Weak relationship - A relationship in which the primary key of the related entity does not contain a primary key component of the parent entity. Also known as a non-identifying relationship.  
+
+4. Chapter 5    
+Completeness constraint - A constraint that specifies whether each entity supertype occurrence must also be a member of at least one subtype. The completeness constraint can be partial or total. 
+Partial completeness - means that some supertype occurrences might not be members of any subtype. 
+Total completeness - means that every supertype occurrence must be a member of at least one subtype.  
+Design trap - A problem that occurs when a relationship is improperly or incompletely identified and therefore is represented in a way that is not consistent with the real world. The most common design trap is known as a fan trap.  
+Disjoint subtype (nonoverlapping subtype) - In a specialization hierarchy, a unique and nonoverlapping subtype entity set.  
+EER diagram (EERD) - The entity relationship diagram resulting from the application of extended entity relationship concepts that provide additional semantic content in the ER model.  
+Entity cluster - A virtual entity type used to represent multiple entities and relationships in the ERD. An entity cluster is formed by combining multiple interrelated entities into a single abstract entity object. An entity cluster is considered? Virtual? Or? Abstract? Because it is not actually an entity in the final ERD.  
+Entity subtype - In a generalization/specialization hierarchy, a subset of an entity supertype. The entity supertype contains the common characteristics and the subtypes contain the unique characteristics of each entity.  
+Entity supertype - In a generalization/specialization hierarchy, a generic entity type that contains the common characteristics of entity subtypes.  
+Extended entity relationship model (EERM) - Sometimes referred to as the enhanced entity relationship model; the result of adding more semantic constructs, such as entity supertypes, entity subtypes, and entity clustering, to the original entity relationship model.  
+Fan trap - A design trap that occurs when one entity is in two 1:M relationships with other entities, thus producing an association among the other entities that is not expressed in the model.  
+Generalization - In a specialization hierarchy, the grouping of common attributes into a supertype entity.  
+Inheritance - In the object-oriented data model, the ability of an object to inherit the data structure and methods of the classes above it in the class hierarchy.  
+Natural key (natural identifier) - A generally accepted identifier for real-world objects. As its name implies, a natural key is familiar to end users and forms part of their day-to-day business vocabulary.  
+Overlapping subtype - In a specialization hierarchy, a condition in which each entity instance of the supertype can appear in more than one subtype.  
+Partial completeness - In a generalization hierarchy, a condition in which some supertype occurrences might not be members of any subtype.  
+Specialization - In a specialization hierarchy, the grouping of unique attributes into a subtype entity.  
+Specialization hierarchy - A hierarchy based on the top-down process of identifying lower-level, more specific entity subtypes from a higher-level entity supertype. Specialization is based on grouping unique characteristics and relationships of the subtypes.  
+Subtype (entity set) - An entity that contains unique characteristics within a more broadly defined entity known as a supertype. In a generalization hierarchy, a subtype is any entity below a parent entity. For example, PILOT could be a subtype of the supertype EMPLOYEE.  
+Subtype discriminator - The attribute in the supertype entity that determines to which entity subtype each supertype occurrence is related.  
+Supertype (entity set) - An entity set that contains the commonly shared characteristics of its entities. If the entity set can include characteristics that are not common to all entities within the set, the supertype becomes the parent to one or more subtypes in a generalization hierarchy.  
+Surrogate key - A system-assigned primary key, generally numeric and auto-incremented.  
+Time-variant data - Data whose values are a function of time. For example, time-variant data can be seen at work when a company's history of all administrative appointments is tracked.  
+Total completeness - In a generalization/specialization hierarchy, a condition in which every supertype occurrence must be a member of at least one subtype.  
+			Exam 1 Review
+
+

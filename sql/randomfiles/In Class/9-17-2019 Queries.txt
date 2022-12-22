@@ -1,0 +1,50 @@
+/*
+List the Price Ids and stock highs over 130 dollars rounded to the
+nearest penny.
+*/
+SELECT PriceID, ROUND(ST_High,2) AS RoundedStockHighToNearestPenny
+	FROM StockData
+	WHERE ST_High > 130;
+
+/*
+List each ticker symbol and the average daily trade volume for that 
+stock. Order the list from highest to least daily trade volume.
+*/
+SELECT TickerSymbol, AVG(Volume) AS AverageVolume
+	FROM StockData
+GROUP BY TickerSymbol
+ORDER BY AVG(Volume) DESC;
+
+/*
+Create a Toys table (ToyID, ToyName) and a Colors Table (ColorID,
+ColorName) and put six tuples in each table. USe CREATE statements to 
+make the tables.
+*/
+
+CREATE TABLE Toys
+(ToyID	INT	PRIMARY KEY,
+ToyName	CHAR(20)
+)
+CREATE TABLE Colors
+(ColorID	INT	PRIMARY KEY,
+ColorName	CHAR(20)
+)
+
+/*
+Please return all combinations of Toys and Colors.
+*/
+SELECT *
+	FROM Colors CROSS JOIN Toys;
+
+/*
+Write a stored procedure that returns all combinations of Toys and
+Colors. Include only those toys with an ID larger than a value that will
+be supplied at run time.
+*/
+
+CREATE PROCEDURE VanHalen (@ID INT)
+AS
+SELECT *
+	FROM Colors CROSS JOIN Toys
+	WHERE ToyID > @ID;
+EXEC VanHalen 12

@@ -1,0 +1,22 @@
+--Return all rows and columns from CompanyInformation
+SELECT *
+	FROM CompanyInformation;
+
+--Please return PriceID, Ticker Symbol, opening price and volume
+SELECT PriceID, TickerSymbol, ST_Open, Volume
+	FROM StockData; 
+
+--Return Price ID, Ticker Symbol, Volume, and 
+--Opening price where volume in greater than 1 million shares
+SELECT PriceID, TickerSymbol, ST_Open, Volume
+	FROM StockData 
+	WHERE Volume > 1000000;
+
+/*
+Return Price ID, Ticker Symbol, Volume, and 
+Opening price where volume in greater than 1 million shares
+for the year 2018 
+*/
+SELECT PriceID, TickerSymbol, ST_Open, Volume
+	FROM StockData 
+	WHERE Volume > 1000000 AND YEAR(TradeDate) = 2018;

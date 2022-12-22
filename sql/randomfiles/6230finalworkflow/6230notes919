@@ -1,0 +1,4 @@
+TickerSymbol, AD, ST_Close
+	FROM SD AS JOIN
+	[AZURE DATABASE].SDB. AS AD
+	ON (.TD = .AD)

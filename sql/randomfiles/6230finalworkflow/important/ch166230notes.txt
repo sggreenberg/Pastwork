@@ -1,0 +1,152 @@
+Database administration and security'
+	data as a corporate asset
+				value of data is measured by the utility of the information derived from it. Good data management is likely to produce good information, which is the basis for better decision making
+				figure 16.1: data-information-decision-making cycle
+				dbms facilitates
+					interpretation and presentation of data in useful formats through transforming raw data to info
+					distribution
+					preservation and monitoring
+					control
+				def- dirty data
+					data that contain inaccuracies and/or inconsistencies
+				def- data quality
+					a comprehensive approach to ensuring the accuracy, validity, and timeliness
+						focuses on correcting dirty data, preventing future inaccuracies in the data, and building user confidence in the data
+				def- data profiling software
+					programs that analyze data and metadata to determine patterns that can help assess data quality
+				def- master data management
+					methodology that provides a "master copy" of entities such as customers, that appear in numerous systems throughout the organization. MDM help prevent dirty data by coordinating common data across multiple systems
+	the need for a database and its role in an organization
+				def- security
+					activities and measures to ensure the confidentiality, integrity, and availability of an information system and its main asset, data
+				def- privacy
+					The rights of individuals and organizations to determine access to data about themselves
+				def- enterprise database
+					The overall company data representation, which provides support for presents and expected future needs
+	Introduction of a database: special considerations
+	evolution of database administration
+				def- information systems (IS) department
+					A department responsible for all information technology services and production fuctions in an organization
+				figure 16.2: The IS departments internal organization
+				def- database administrators (DBA)
+					The person responsible for planning, organizing, controlling, and monitoring the centralized and shared corporate database. The DBA is the general manager of the database administration department	
+				figure 16.3: the placement of the DBA function
+				figure 16.4: a dba functional organization
+				def- systems administrator
+					The person responsible for coordinating and performaing day-to-day data-processing activities
+				figure 16.4: multiple database administrators in an organization
+				def- data administrator (DA)
+					The person responsible for managing the entire data resource, whether it is computerized or not. The DA has broader authority and responsibility than the database administrator. Also known as an infromation resource manager (IRM)
+	database environment's human component
+				table 16.1: contrasting DA and DBA activities and characteristics
+				figure 16.6: A summary of DBA activities
+				table 16.2: desired DBA skills
+		The DBA's managerial role
+				table 16.3: DBA activities and services
+				plan organizing testing monitoring delivering
+			end-user support
+			policies, procedures, and standards
+				def- policy
+					general statement of direction that is used to manage company operations through the communication and support of the organization's objectives
+				def- standard
+					A detailed and specific set of instructions that describes the minimum requirements for a given activity. Standards are used to evaluate the quality of the output.
+				def- procedures
+					series of steps to be followed during the performance of an activity or process
+			data security, privacy, and integrity
+			data backup and recovery
+				def- database security officer (DSO)
+					The person responible for the security, integrity, backup, and recovery of the database
+				def- disaster management
+					the sete of dba activities dedicated to securing data availability following a physical disaster or a database integrity failure
+				
+				def- full backup (database dump)
+					a complete copy of an entire database saved and periodically updated in a seperate memory location. A full backup ensures a full recovery of all data after a physical disaster or database integrity failure
+				def- incremental backup
+					a process that only backs up data that has changed in the database since the last incremental or full backup
+				def- concurrent backup
+					a backup that takes place while one or more users are working on a database
+			data distribution and use
+		the DBA's Technical role
+			evaluating, selecting, and installing the DBMS and Utilities
+			designing and implementing databases and applications
+				def- access plan
+					a set of instructions generated at application compilation time that is created and managed by a dbms. The access plan predermines how an application's query will access the database at run time
+			testing and evaluating databases and applications
+			operating the DBMS, Utilities, and Applications
+			maintaining the DBMS, Utilities, and Applications
+	security
+				def- confidentiality
+					in the context of data security, ensuring that data is protected against unauthorized access, and if the data is accessed by an authorized user, that the data is used only for an authorized purpose
+				def- compliance
+					activities that meet data privacy and security reporting guidelines or requirements
+				def- integrity
+					in a data security framework, refers to keeping data consistent and free of errors or anomalies
+				def- availability
+					in the context of data security, it refers to the accessibility of data whenever required by authorized users and for authorized purposes
+		security policies
+				def- security policy
+					a collection of standards, policy, and procedures created to guarantee the security of a system and ensure auditing and compliance
+		security vulnerabilities
+				def- security vulnerability
+					a weakness in a system component that could be exploited to allow unauthorized access or cause service disruptions
+				def- security threat
+					an imminent security violation that could occur due to unchecked security vulnerabilities
+				def- security breach
+					an event in which a security threat is exploited to endanger the integrity, confidentiality, or availability of the system
+				table 16.4: sample security vulnerabilities and related protective measures
+		database security
+				def- database security
+					The use of DBMS features and other related measures to comply with the security requirements of an organization
+				def- authorization management
+					procedures that protect and guarantee database security and integrity. Such procedures include user access management, view definition, DBMS access-control, and DBMS usage monitoring
+				def- audit log
+					a security feature of a database management system that automatically records a brief description of the database operations performed by all users
+	database administration tools
+		the data dictionary
+				def- active data dictionary
+					A data dictionary that is automatically updated by the database management system every time the database is accessed, thereby keeping its information current
+				def- passive data dictionary
+					a dbms data dictionary that requires a command initiated by an end user to update its data access statistics
+			examples of data dictionary usage
+		case tools
+				def- computer assisted systems engineering (CASE)
+					tools used to automate part or all of the systems development life cycle
+				def- Front-end CASE tool
+					a computer-aided software tool that provides support for the planning, analysis, and design phases of the sdlc
+				def- Back-end CASE tool
+					a computer-aided software tool that provides support for the coding and implementation phases of the sdlc
+				Figure 16.7: an example of a case tool: Microsoft visio professional
+				Table 16.5: CASE data modeling tools
+	developing a data administration strategy
+				def- Information engineering (IE)
+					a methodology that translates a company's strategic goals into helpful data and applications. IE focuses on the description of corporate data instead of the processess
+				def- Information systems architecture (ISA)
+					The output of the information engineering (IE) process that serves as the basis for planning, developing, and controlling future information systems
+				Figure 16.8: Forces affecting the development of the ISA
+	the DBA's role in the cloud
+	The DBA at work: using oracle for database administration
+		Oracle Database Administration Tools
+		Ensuring that the RDBMS starts automatically
+				Figure 16.9: The Oracle enterprise manager express interface
+				Figure 16.10: Oracle RDBMS services
+				def- database instance
+					in an oracle dbms, the collection of processes and data structures used to manage a specific database
+		creating tablespaces and datafiles
+				def- tablespace
+					in a dbms, a logical storage space used to group related data. Also known as a filegroup
+				def- datafile
+					a file on the hard drive or storage system where the data in a tablespace is physically stored
+				figure 16.11: Oracle storage management
+				figure 16.12: Creating a new oracle tablespace
+		managing users and establishing security
+				def- user
+					in a system, a uniquely identifiable object that allows a given person or process to log on to the database
+				def- role
+					in Oracle, a named collection of database access privileges that authorize a user to connect to a database and use its system resources
+				def- profile
+					in oracle, a named collection of settings that controls how much of the database resource a given user can use
+				Figure 16.13: the oracle enterprise manager users page
+				figure 16.14: the create user wizard
+				figure 16.15: Assigning a user quota
+		customizing the database initialization parameters
+				Figure 16.16 Oracle enterprise manager initialization parameters

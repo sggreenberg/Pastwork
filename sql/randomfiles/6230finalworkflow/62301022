@@ -1,0 +1,12 @@
+more normalized means more tables
+denormalized for performance (say to get rid of people when I hadn't normalized)--typically involves cleanish data though
+by def 2nf implies 1nf
+primary key can be made of more than one attribute
+dependency diagram
+functional dependency: everything must be functionally dependent on the key, the whole key, and nothing but the key so help me codd.[bcnf]
+3 types of anomalies: update, insertion, deletion (lame)
+all relational tables satisfy the 1nf requirements (primary key, and no repeating groups (comes from 1970 kobal) : writing same as above)
+part of data cleaning is eliminating duplicates.
+bcnf is because there is a step between 3rd and 4th
+Will learn common table expressions
+

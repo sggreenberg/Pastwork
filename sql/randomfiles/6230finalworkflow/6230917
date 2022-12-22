@@ -1,0 +1,48 @@
+
+ER diagrams are like blueprints to databases
+Chen diagrams are to go hand in glove with codds relational model
+In real world one submits er diagram and collegues all debate it
+	If I have many to many relationship I would have at most 3 tables
+		For between students and courses (a student can take many courses and courses have many students)
+			I would have a Students table, Courses table and a bridge table
+				bridge table contains st least the primary key of students and courses table
+attributes describe entities and typically cannot be defined even further
+Attribute/entity/
+required attribute must have a value (check if null)
+singlevalued or multivalued & simple or composite
+if cardinality of attribute has minimum of zero it is optional; if it has a minimum of 1 it is required
+what happens if an entity needs to go over the maximum value of 
+code to delete dependent rows
+crows feet optional is depicted by a line with a circle on it ( -0- )
+Assignment 2 use sql-irc
+how to round:
+SELECT PriceID, ROUND(ST_High,2) AS Roundedstocktothenearestpenny
+	FROM StockData
+	WHERE ST_High > 130
+5 aggregates: AVERAGE, MAXIMUM,MINIMUM,COUNT,SUM
+
+What if in order to write sql queries i write the functions first (in caps lock) then write the comments and names/aliases after (without caps-lock and maybe with regex)
+
+/*
+List each ticker symbol and the average daily trade volume for that stock. Order the list from highest to least daily trade volume.
+*/
+SELECT TS, AVG(V) AS AV
+	FROM SD
+GROUP BY TS
+:1,6 s/ TS/ TickerSymbol/g
+:1,6 s/V/Volume/g
+:1,6 s/ AV/ AverageV/g
+:1,6 s/ SD / StockData /g
+
+ORDER BY is only place to use aggregate
+ORDER BY always goes last.
+Cartesian product: each row in one table combined with every row in another table
+
+/* Create a Toys table (ToyID, ToyName
+CREATE TABLE Toys
+(ToyID INT PRIMARY KEY)
+
+cross-join gives cartesian product
+What is a stored procedure is like a defined function
+faster and makes things premanant
+never put exec statement in the stored procedure (write it seperately or at least put an end)

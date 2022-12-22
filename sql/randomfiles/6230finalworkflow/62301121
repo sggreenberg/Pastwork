@@ -1,0 +1,16 @@
+1NF No RG (empty cells), primary key
+2NF 1nf, no partial dependencies
+3NF- 2NF, no transitive dependencies
+BCNF- 3nf, no case where part of the key is based on nonkey attribute (eliminate part of pk depending on nonkey attribute)
+4NF- BCNF,  No Multivalued attribute ( attribute with multiple values (i.e. red mitsubishi))
+
+increasing NF eliminates anomalies : insert, update, delete 
+
+geography 
+
+DECLARE @hh = geography::Point(41.740892, -111.809865, 4236)
+DECLARE @pov = geography::Point(48.805077, 2.120742, 4236)
+DECLARE @tm = geography::Point(  27.175412, 78.042207, 4236)
+DECLARE @ = geography::Point(59.942973, 30.317640, 4236)
+DECLARE @ = geography::Point(-22.951590, -43.210530, 4236)
+DECLARE @ = geography::Point( -27.59580, 153.24585 , 4236)

@@ -1,0 +1,150 @@
+1. Chapter 6
+ 
+Atomic attribute - An attribute that cannot be further subdivided to produce meaningful components. For example, a person's last name attribute cannot be meaningfully subdivided.
+Boyce-Codd Normal Form (BCNF)  -  A special type of third normal form which every determinant is a candidate key. A table in BCNF must be in 3NF.
+Denormalization - A process by which a table is changed from a higher-level normal form to a lower-level normal form, usually to increase processing speed. Denormalization potentially yields data anomalies.
+  Dependency diagram - A representation of all data dependencies within a table.
+Determinant - Any attribute in a specific row whose value directly determines other values in that row.
+First Normal Form (1NF) - The first stage in the normalization process. It describes a relation depicted in tabular format, with no repeating groups and a primary key identified. All nonkey attributes in the relation are dependent on the primary key.
+Fourth Normal Form (4NF) - A table that is in 3NF and contains no multiple independent sets of multivalued dependencies.
+Granularity - The level of detail represented by the values stored in a table's row. Data stored at their lowest level of granularity are said to be atomic data.
+  Key attributes - The attributes that form a primary key.
+  Nonprime attribute - An attribute that is not part of a key.
+Normalization - A process that assigns attributes to entities so that data redundancies are reduced or eliminated.
+Partial dependency - In normalization, a condition in which an attribute is dependent on only a portion of the primary key.
+  Prime attribute - A key attribute; that is, an attribute that is part of a key or is the whole key.
+Repeating group - In a relation, a characteristic describing a group of multiple entries of the same type for a single key attribute occurrence. For example, a car can have multiple colors for its top, interior, bottom, trim, and so on.
+Second Normal Form (2NF) - The second stage in the normalization process, in which a relation is in 1NF and there are no partial dependencies.
+Third Normal Form (3NF) - A table is in 3NF when it is in 2NF and no nonkey attribute is functionally dependent on another nonkey attribute; that is, it cannot include transitive dependencies.
+Transitive dependency - A condition in which an attribute is dependent on another attribute that is not part of the primary key.
+
+2. Chapter 9
+ 
+Bottom-up design - A design philosophy that begins by identifying individual design components and then aggregates them into larger units. In database design, the process begins by defining attributes and then groups them into entities. Compare to top-down design.
+Boundaries - The external limits to which any proposed system is subjected. These limits include budgets, personnel, and existing hardware and software.
+Centralized design -  A process in which a single conceptual design is modeled to match an organization's database requirements. It is typically used when a data component consists of a relatively small number of objects and procedures. Compare to decentralized design.
+Clustered table - A storage technique that stores related rows from two related tables in adjacent data blocks on disk.
+Cohesivity - The strength of the relationships between a module's components. Module cohesivity must be high.
+Computer-Aided Systems Engineering (CASE) - Tools used to automate part or all of the Systems Development Life Cycle.
+Conceptual design - A process that uses data-modeling techniques to create a model of a database structure that represents real-world objects as realistically as possible. The techniques are both software- and hardware-independent.
+  Database development - The process of database design and implementation.
+Database fragment - A subset of a distributed database. Although the fragments may be stored at different sites within a computer network, the set of all fragments is treated as a single database.
+Database Life Cycle (DBLC) - A cycle that traces the history of a database within an information system. The cycle is divided into six phases: initial study, design, implementation and loading, testing and evaluation, operation and maintenance, and evolution.
+Database role - A set of database privileges that could be assigned as a unit to a user or group.
+Decentralized design - A process in which conceptual design is used to model subsets of an organization's database requirements. After verification of the views, processes, and constraints, the subsets are then aggregated into a complete design. Such modular designs are typical of complex systems in which the data component has a relatively large number of objects and procedures. Compare to centralized design.
+Description of operations - A document that provides a precise, detailed, up-to-date, and thoroughly reviewed description of the activities that define an organization's operating environment.
+Differential backup - A level of database backup in which only the last modifications to the database are copied.
+Full backup (database dump) - A complete copy of an entire database saved and periodically updated in a separate memory location. A full backup ensures a full recovery of all data after a physical disaster or database integrity failure.
+Information system - A system that provides for data collection, storage, and retrieval; facilitates the transformation of data into information; and manages both data and information. An information system is composed of hardware, the DBMS and other software, databases, people, and procedures.
+Logical design - A stage in the design phase that matches the conceptual design to the requirements of the selected DBMS and is therefore software-dependent. Logical design is used to translate the conceptual design into the internal model for a selected database management system, such as DB2, SQL Server, Oracle, IMS, Informix, Access, or Ingress.
+Minimal data rule - Defined as…All that is needed is there, and all that is there is needed. In other words, all data elements required by database transactions must be defined in the model, and all data elements defined in the model must be used by at least one database transaction.
+Module - 1 - A design segment that can be implemented as an autonomous unit, and is sometimes linked to produce a system. 2 - An information system component that handles a specific function, such as inventory, orders, or payroll.
+  Module coupling - The extent to which modules are independent of one another.
+Physical design - A stage of database design that maps the data storage and access characteristics of a database. Because these characteristics are a function of the types of devices supported by the hardware, the data access methods supported by the system physical design are both hardware- and software-dependent.
+Scope -  The part of a system that defines the extent of the design, according to operational requirements.
+Systems analysis - The process that establishes the need for an information system and its extent.
+  Systems development - The process of creating an information system.
+Systems Development Life Cycle (SDLC) - The cycle that traces the history of an information system. The SDLC provides the big picture within which database design and application development can be mapped out and evaluated.
+Top-down design - A design philosophy that begins by defining the main structures of a system and then moves to define the smaller units within those structures. In database design, this process first identifies entities and then defines the attributes within the entities. Compare to bottom-up design.
+Transaction log backup - A backup of only the transaction log operations that are not reflected in a previous backup copy of the database.
+Virtualization - A technique that creates logical representations of computing resources that are independent of the underlying physical computing resources.
+ 
+3. Chapter 13
+ 
+Algorithm - A process or set of operations in a calculation. The most common algorithms used in data mining are based on neural networks, decision trees, rules induction, genetic algorithms, classification and regression trees, memory-based reasoning, and nearest neighbor.
+Attribute hierarchy - A top-down data organization that is used for two main purposes: aggregation and drill-down/roll-up data analysis.
+Business Intelligence (BI) - A comprehensive, cohesive, and integrated set of tools and processes used to capture, collect, integrate, store, and analyze data with the purpose of generating and presenting information to support business decision making.
+Cube cache - In multidimensional OLAP, the shared, reserved memory area where data cubes are held. Using the cube cache assists in speeding up data access.
+Dashboard - In business intelligence, a Web-based system that presents key business performance indicators or information in a single, integrated view with clear and concise graphics.
+Data analytics - A subset of business intelligence functions that encompasses a wide range of mathematical, statistical, and modeling techniques with the purpose of extracting knowledge from data.
+Data cube - The multidimensional data structure used to store and manipulate data in a multidimensional DBMS. The location of each data value in the data cube is based on its x-, y-, and z-axes. Data cubes are static, meaning they must be created before they are used, so they cannot be created by an ad hoc query.
+Data extraction - A process used to extract and validate data from an operational database and external data sources prior to their placement in a data warehouse.
+Data filtering - A process used to extract and validate data from an operational database and external data sources prior to their placement in a data warehouse.
+Data mart - A small, single-subject data warehouse subset that provides decision support to a small group of people.
+Data mining - A process that employs automated tools to analyze data in a data warehouse and other sources and to proactively identify possible relationships and anomalies.
+Data store - The component of the decision support system that acts as a database for storage of business data and business model data. The data in the data store have already been extracted and filtered from the external and operational data, and will be stored for access by the end-user query tool for the business data model.
+Data warehouse - An integrated, subject-oriented, time-variant, nonvolatile collection of data that provides support for decision making, according to Bill Inmon, the acknowledged father of the data warehouse.
+Decision Support System (DSS) - An arrangement of computerized tools used to assist managerial decision making within a business.
+Dimension tables - In a data warehouse, tables used to search, filter, or classify facts within a star schema. The fact table is in a one-to-many relationship with dimension tables.
+Dimensions - In a star schema design, qualifying characteristics that provide additional perspectives to a given fact.
+Drill down - To decompose data into more atomic components. That is, data at lower levels of aggregation. This approach is used primarily in a decision support system to focus on specific geographic areas, business types, and so on.
+End-user presentation tool - A data analysis tool that organizes and presents selected data compiled by the end-user query tool.
+End-user query tool - A data analysis tool used to create the queries that access desired information from the data store.
+Explanatory analytics - Data analysis that provides ways to discover relationships, trends, and patterns among data.
+Extraction, Transformation, and Loading (ETL) - In a data warehousing environment, the integrated processes of getting data from original sources into the data warehouse. ETL includes retrieving data from original data sources, manipulating the data into an appropriate form, and storing the data in the data warehouse.
+Fact table - In a data warehouse, the star schema table that contains facts linked and classified through their common dimensions. A fact table is in a one-to-many relationship with each associated dimension table.
+Facts - In a data warehouse, the measurements that represent a specific business aspect or activity. For example, sales figures are numeric measurements that represent product or service sales. Facts commonly used in business data analysis include units, costs, prices, and revenues.
+Governance - In business intelligence, the methods for controlling and monitoring business health and promoting consistent decision making.
+Key Performance Indicators (KPIs) - In business intelligence, quantifiable numeric or scale-based measurements that assess a company's effectiveness or success in reaching strategic and operational goals. Examples of KPI are product turnovers, sales by promotion, sales by employee, and earnings per share.
+Master Data Management (MDM) - In business intelligence, a collection of concepts, techniques, and processes for the proper identification, definition, and management of data elements within an organization.
+Materialized view - A dynamic table that not only contains the SQL query command to generate rows but stores the actual rows. The materialized view is created the first time the query is run and the summary rows are stored in the table. The materialized view rows are automatically updated when the base tables are updated.
+Metrics - In a data warehouse, numeric facts that measure a business characteristic of interest to the end user.
+Multidimensional database management system - A database management system that uses proprietary techniques to store data in matrixlike arrays of n dimensions known as cubes.
+Multidimensional online analytical processing - An extension of online analytical processing to multidimensional database management systems.
+Online Analytical Processing (OLAP) - Decision support system tools that use multidimensional data analysis techniques. OLAP creates an advanced data analysis environment that supports decision making, business modeling, and operations research.
+  Partitioning - The process of splitting a table into subsets of rows or columns.
+Periodicity - Information about the time span of data stored in a table, usually expressed as current year only, previous years, or all years.
+Portal - In terms of business intelligence, a unified, single point of entry for information distribution.
+Predictive analytics - Data analytics that use advanced statistical and modeling techniques to predict future business outcomes with great accuracy.
+Relational Online Analytical Processing (ROLAP) - Analytical processing functions that use relational databases and familiar relational query tools to store and analyze multidimensional data.
+Replication - The process of creating and managing duplicate versions of a database. Replication is used to place copies in different locations and to improve access time and fault tolerance.
+Roll up -  In SQL, an OLAP extension used with the GROUP BY clause to aggregate data by different dimensions. Rolling up the data is the exact opposite of drilling down the data.
+  Slice and dice - The ability to cut slices off a data cube to perform a more detailed analysis.
+Snowflake schema - A type of star schema in which dimension tables can have their own dimension tables. The snowflake schema is usually the result of normalizing dimension tables.
+Sparsity - In multidimensional data analysis, a measurement of the data density held in the data cube.
+Star schema -  A data modeling technique used to map multidimensional decision support data into a relational database. The star schema represents data using a central table known as a fact table in a 1:M relationship with one or more dimension tables.
+Very Large Databases (VLDBs) - Databases that contain huge amounts of datagigabyte, terabyte, and petabyte ranges are not unusual.
+ 
+4. Chapter 16
+ 
+Access plan -  A set of instructions generated at application compilation time that is created and managed by a DBMS. The access plan predetermines how an application's query will access the database at run time.
+Active data dictionary - A data dictionary that is automatically updated by the database management system every time the database is accessed, thereby keeping its information current.
+Audit log - A security feature of a database management system that automatically records a brief description of the database operations performed by all users.
+Authorization management - Procedures that protect and guarantee database security and integrity. Such procedures include user access management, view definition, DBMS access control, and DBMS usage monitoring.
+Availability - In the context of data security, it refers to the accessibility of data whenever required by authorized users and for authorized purposes.
+Back-end CASE tools - A computer-aided software tool that provides support for the coding and implementation phases of the SDLC. In comparison, front-end CASE tools provide support for the planning, analysis, and design phases.
+Compliance - Activities that meet data privacy and security reporting guidelines or requirements.
+Computer-Aided Systems Engineering (CASE) - Tools used to automate part or all of the Systems Development Life Cycle.
+Concurrent backup - A backup that takes place while one or more users are working on a database.
+Confidentiality - In the context of data security, ensuring that data are protected against unauthorized access, and if the data are accessed by an authorized user, that the data are used only for an authorized purpose.
+Data Administrator (DA) - The person responsible for managing the entire data resource, whether it is computerized or not. The DA has broader authority and responsibility than the database administrator.
+Data profiling software - Programs that analyze data and metadata to determine patterns that can help assess data quality.
+Data quality - A comprehensive approach to ensuring the accuracy, validity, and timeliness of data.
+Data-profiling - Software Programs that analyze data and metadata to determine patterns that can help assess data quality.
+Database Administrator (DBA) - The person responsible for planning, organizing, controlling, and monitoring the centralized and shared corporate database. The DBA is the general manager of the database administration department.
+Database instance - In an Oracle DBMS, the collection of processes and data structures used to manage a specific database.
+Database object - Any object in a database, such as a table, view, index, stored procedure, or trigger.
+Database security - The use of DBMS features and other related measures to comply with the security requirements of an organization.
+Database Security Officer (DSO) - The person responsible for the security, integrity, backup, and recovery of the database.
+  Dirty data - Data that contain inaccuracies and/or inconsistencies.
+Disaster management - The set of DBA activities dedicated to securing data availability following a physical disaster or a database integrity failure.
+Enterprise database - The overall company data representation, which provides support for present and expected future needs.
+Front-end CASE tools - A computer-aided software tool that provides support for the planning, analysis, and design phases of the SDLC. In comparison, back-end CASE tools provide support for the coding and implementation phases.
+Full backup (database dump) - A complete copy of an entire database saved and periodically updated in a separate memory location. A full backup ensures a full recovery of all data after a physical disaster or database integrity failure.
+Incremental backup - A process that only backs up data that has changed in the database since the last incremental or full backup.
+Information Engineering (IE) - A methodology that translates a company's strategic goals into helpful data and applications. IE focuses on the description of corporate data instead of the processes.
+Information Systems Architecture (ISA) - The output of the information engineering process that serves as the basis for planning, developing, and controlling future information systems.
+Information Systems (IS) Department - An evolution of the data-processing department in which responsibilities are broadened to include service and production functions.
+Integrity - In a data security framework, refers to keeping data consistent and free of errors or anomalies.
+Master Data Management (MDM) - In business intelligence, a collection of concepts, techniques, and processes for the proper identification, definition, and management of data elements within an organization.
+Passive data dictionary - A DBMS data dictionary that requires a command initiated by an end user to update its data access statistics.
+Policies - General statements of direction that are used to manage company operations through the communication and support of the organization's objectives.
+Privacy - The rights of individuals and organizations to determine access to data about themselves.
+  Procedures -  Series of steps to be followed during the performance of an activity or process.
+Profile - In Oracle, a named collection of settings that controls how much of the database resource a given user can use.
+Role - In Oracle, a named collection of database access privileges that authorize a user to connect to a database and use its system resources.
+Schema - A logical grouping of database objects, such as tables, indexes, views, and queries, that are related to each other. Usually, a schema belongs to a single user or application.
+Security - Activities and measures to ensure the confidentiality, integrity, and availability of an information system and its main asset, data.
+Security breach - An event in which a security threat is exploited to endanger the integrity, confidentiality, or availability of the system.
+Security policy - A collection of standards, policies, and procedures created to guarantee the security of a system and ensure auditing and compliance.
+Security threat - An imminent security violation that could occur due to unchecked security vulnerabilities.
+Security vulnerability - A weakness in a system component that could be exploited to allow unauthorized access or cause service disruptions.
+Standards - A detailed and specific set of instructions that describes the minimum requirements for a given activity. Standards are used to evaluate the quality of the output.
+Systems administrator - The person responsible for coordinating an organization's data-processing activities.
+Tablespace - In a DBMS, a logical storage space used to group related data. Also known as a file group.
+User - In a system, a uniquely identifiable object that allows a given person or process to log on to the database.
+ 
+
+			Final Exam Review
+
+
